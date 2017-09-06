@@ -4,13 +4,14 @@ using System.Collections;
 public class GameMovement : MonoBehaviour {
 	public GameObject player;
 	public GameObject startUI, restartUI;
-	public GameObject startPoint, playPoint, restartPoint;
+	//public GameObject startPoint, playPoint, restartPoint;
+	public GameObject playPoint, restartPoint;
 
 	public bool playerWon = false;
 
 	// Use this for initialization
 	void Start () {
-		player.transform.position = startPoint.transform.position;
+		player.transform.position = playPoint.transform.position;
 	}
 
 	// Update is called once per frame
@@ -33,7 +34,7 @@ public class GameMovement : MonoBehaviour {
 	}
 
 	public void resetPuzzle() { //Reset the puzzle sequence
-		player.transform.position = startPoint.transform.position;
+		player.transform.position = playPoint.transform.position;
 		toggleUI ();
 	}
 
