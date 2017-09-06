@@ -160,7 +160,7 @@
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
      <Compile Include="Assets\Scripts\GameLogic.cs" />
-     <Compile Include="Assets\Scripts\GameMovement.cs" />
+     <Compile Include="Assets\Scripts\GameLogicOld.cs" />
      <Compile Include="Assets\Scripts\lightUp.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark01_UGUI.cs" />
