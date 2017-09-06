@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F6F17DD9-254C-95AF-D522-AF716377F035}</ProjectGuid>
+    <ProjectGuid>{CF07DCF6-D89B-D864-4B45-67ADAD5E55FC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -90,6 +90,7 @@
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoAmbientOcclusion.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTextureOverlay.shader" />
+     <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Plugins\Android\proguard-gvr.txt" />
      <None Include="Assets\TextMesh Pro\Fonts\Bangers - OFL.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest-Daydream.xml" />
@@ -163,13 +164,13 @@
  <HintPath>/Applications/Unity_2017.1.0p5/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>/Users/stephaniehawn/Documents/UnityProjects/puzzler-starter-project-005/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>/Users/stephaniehawn/Documents/gitprojects/Udacity-vr-puzzler/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro-1.0.55.2017.1.0b12">
- <HintPath>/Users/stephaniehawn/Documents/UnityProjects/puzzler-starter-project-005/Assets/TextMesh Pro/Plugins/TextMeshPro-1.0.55.2017.1.0b12.dll</HintPath>
+ <HintPath>/Users/stephaniehawn/Documents/gitprojects/Udacity-vr-puzzler/Assets/TextMesh Pro/Plugins/TextMeshPro-1.0.55.2017.1.0b12.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro-1.0.55.2017.1.0b12-Editor">
- <HintPath>/Users/stephaniehawn/Documents/UnityProjects/puzzler-starter-project-005/Assets/TextMesh Pro/Plugins/Editor/TextMeshPro-1.0.55.2017.1.0b12-Editor.dll</HintPath>
+ <HintPath>/Users/stephaniehawn/Documents/gitprojects/Udacity-vr-puzzler/Assets/TextMesh Pro/Plugins/Editor/TextMeshPro-1.0.55.2017.1.0b12-Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity_2017.1.0p5/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -179,8 +180,10 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{149BB6CB-B0F5-7E4C-BEB6-9FED40B98D9B}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{BC0FFBF5-D8EC-5EC8-DD78-6726AEFE5832}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{BD09304D-9B95-39AC-1DA5-D49401031397}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
