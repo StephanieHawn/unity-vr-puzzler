@@ -8,6 +8,7 @@ public class GameLogic : MonoBehaviour {
 	//public GameObject startPoint, playPoint, restartPoint;
 	public GameObject playPoint, restartPoint;
 	public GameObject[] puzzleSpheres; //An array to hold our puzzle spheres
+	public GameObject doors;
 
 	public int puzzleLength = 5; //How many times we light up.  This is the difficulty factor.  The longer it is the more you have to memorize in-game.
 	public float puzzleSpeed = 1f; //How many seconds between puzzle display pulses
@@ -105,6 +106,7 @@ public class GameLogic : MonoBehaviour {
 
 
 	public void resetPuzzle() { //Reset the puzzle sequence
+		doors.GetComponent<door> ().DoorOrigPosition();
 		iTween.MoveTo (player, 
 			iTween.Hash (
 				"position", playPoint.transform.position, 
@@ -134,10 +136,11 @@ public class GameLogic : MonoBehaviour {
 	}
 
 	public void puzzleSuccess() { //Do this when the player gets it right
+		doors.GetComponent<door> ().Unlock();
 		iTween.MoveTo (player, 
 			iTween.Hash (
 				"position", restartPoint.transform.position, 
-				"time", 2, 
+				"time", 4, 
 				"easetype", "linear",
 				"oncomplete", "finishingFlourish", 
 				"oncompletetarget", this.gameObject
